@@ -33,6 +33,7 @@
     right: 0%;
     top: 100%;
     width: 193px;
+    z-index: 1;
 }
 
 .container__botao:checked~.lista-menu {
