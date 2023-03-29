@@ -1,0 +1,92 @@
+.palco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.palco__imagem {
+    width: 360px;
+    height: 360px;
+}
+
+.palco__legenda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.legenda__titulo {
+    color: var(--cinza-banner);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px; 
+}
+
+.legenda__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.legenda__item {
+    gap: 16px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.quadrado__indicador {
+    width: 32px;
+    height: 32px;
+}
+
+.legenda__texto {
+    color: var(--cinza-banner);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.azul {
+    background: #0E7DF1;
+}
+
+.rosa {
+    background: #FE016E;
+}
+
+.verde {
+    background: #01A89E;
+}
+
+.roxo {
+    background: #3F51B5;
+}
+
+.azul_escuro {
+    background: #0E7DF1;
+}
+
+@media screen and (min-width: 768px) {
+    .palco__imagem {
+        width: 648px;
+        height: auto;
+    }
+
+    .legenda__titulo {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .palco {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .palco__imagem {
+        width: 690px;
+        height: 609px;  
+    }
+}

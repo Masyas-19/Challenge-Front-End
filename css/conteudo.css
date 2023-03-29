@@ -1,0 +1,86 @@
+.principal__conteudo {
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+.conteudo__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+.conteudo__imagem {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 312px;
+    height: 381px;
+}
+
+.conteudo__titulo {
+    color: var(--cinza-banner);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+}
+
+.conteudo__texto {
+    color: var(--cinza-banner);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .conteudo__imagem {
+        width: 609px;
+        height: 381px;
+    }
+    .conteudo__info {
+        width: 528px;
+        height: 358px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .conteudo__container {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 48px;
+        margin-bottom: 5em;
+    }
+    
+    .conteudo__imagem {
+        width: 609px;
+        height: 381px;
+    }
+
+    .conteudo__info {
+        width: 540px;
+        height: auto;
+    }
+
+    .conteudo__titulo {
+        margin-bottom: .5em;
+        text-align: start;
+    }
+
+    .conteudo__texto {
+        text-align: start;
+    }
+
+    .sustentabilidade {
+        flex-direction: row-reverse;
+    }
+
+    .titulo__sustentabilidade {
+        text-align: end;
+    }
+
+    .texto__sustentabilidade {
+        text-align: end;
+    }
+}
